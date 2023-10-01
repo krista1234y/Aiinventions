@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invention Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .output {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .output p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0 0 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invention Generator</h1>
+        <label for="userInput">Mold your world with AI. Enter one of the keywords and let AI come up with the rest.</label>
+        <input type="text" id="userInput">
+        <button id="generateButton">Generate Invention</button>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        const kitchenInventions = [
+            "Magnetic Utensil Holder for Stove: A magnetic strip that attaches to the stove or range hood, providing a convenient spot to hang cooking utensils.",
+            "Compact Handheld Vegetable Spiralizer: A small, easy-to-use tool for creating spiralized vegetables, promoting healthy eating habits.",
+            "Non-Slip Pot and Pan Handle Covers: Heat-resistant silicone covers that slide onto handles, providing a secure grip and preventing burns.",
+            "Adjustable Measuring Cup for Dry Ingredients: A measuring cup with an adjustable slider for precise measurement of dry ingredients, eliminating the need for multiple cups.",
+            "Expandable Under-Sink Organizer with Adjustable Shelves: An organizer with adjustable shelves and compartments for maximizing storage space under the kitchen sink.",
+            "Adjustable Rolling Cookie Cutter with Interchangeable Shapes: A rolling cookie cutter with interchangeable discs to create various cookie shapes and sizes.",
+            "Collapsible Funnel with Integrated Strainer: A collapsible silicone funnel with an attached strainer for filtering liquids directly into bottles or jars."
+        ];
+
+        const beautyInventions = [
+            "Scented Body Powder: Develop scented body powders in various fragrances for a luxurious and refreshing experience.",
+            "Multi-Use Makeup Sticks: Design multi-purpose makeup sticks that can be used for eyes, lips, and cheeks, providing versatility for consumers.",
+            "Natural Fiber Sheet Masks: Sheet masks made from biodegradable plant-based materials infused with natural, skin-loving ingredients.",
+            "Customizable Fragrance Blotters: Fragrance blotters infused with essential oils, allowing users to mix and match scents for a personalized fragrance experience.",
+            "Exfoliating Foot Mask Socks: Socks infused with exfoliating ingredients like fruit acids and natural extracts for a gentle foot peel treatment.",
+            "Customizable Lip Balm Kit with Natural Extracts: A kit containing a base lip balm and various natural extracts for users to create their own custom lip balm flavors.",
+            "Natural Fiber Makeup Sponge with Integrated Skincare Serum: A makeup sponge made from natural fibers with an integrated serum core, providing both makeup application and skincare benefits.",
+            "Reusable Silk Pillowcase with Embedded Silk Proteins: A silk pillowcase with silk proteins woven into the fabric to promote healthy hair and skin while you sleep.",
+            "Flower Petal-Infused Bath Bombs: Bath bombs made with dried flower petals and natural, skin-friendly ingredients for a luxurious and relaxing bath experience.",
+            "Customizable Clay Face Mask Palette: A palette containing various natural clay powders, allowing users to mix their own custom face masks for different skin needs.",
+            "Herbal-Infused Bath Tea Bags with Reusable Mesh Infuser: Bath tea bags filled with a blend of dried herbs and flowers that can be steeped in warm water for a fragrant and skin-soothing bath.",
+            "Aromatherapy Scented Sachets for Drawers and Closets: Sachets infused with essential oils and dried botanicals, providing a natural and aromatic way to freshen up drawers and closets."
+        ];
+
+        const laundryRoomInventions = [
+            "Laundry Room Odor Absorbers: Scented pouches or containers filled with natural odor-absorbing materials to keep the laundry room smelling fresh.",
+            "Folding Laundry Basket with Handles: A collapsible laundry basket with sturdy handles for easy carrying and storage.",
+            "Hanger Organizer: A wall-mounted organizer with hooks and shelves to keep hangers, detergents, and other laundry supplies neatly arranged.",
+            "Laundry Room Safety Stool: A stable stool with non-slip surfaces to help users reach high shelves or access upper cabinets safely."
+        ];
+
+        const outdoorGearInventions = [
+            "Adjustable Paracord Hammock with Integrated Insect Netting - A hammock with adjustable suspension using paracord, and integrated insect netting to provide a bug-free resting experience.",
+            "Solar-Powered Lantern with Inflatable Body for Compact Storage - A lantern powered by solar energy, featuring an inflatable body that can be collapsed for easy storage and transport.",
+            "Biodegradable Mosquito-Repellent Wristbands with Plant-Based Formulation - Wristbands made from biodegradable materials infused with a natural mosquito-repelling formulation for outdoor enthusiasts.",
+            "Multi-Tool Hiking Pole with Integrated Compass and Detachable Knife - A hiking pole with a built-in compass for navigation and a detachable knife for versatile outdoor use.",
+            "Scented Fire Starter Logs with Embedded Natural Fragrances - Fire starter logs infused with natural scents for a pleasant aroma while lighting fires.",
+            "Self-Inflating Sleeping Pad with Built-In Pillow and Insulated Side Panels - A lightweight sleeping pad that self-inflates for comfort, featuring an integrated pillow and insulated side panels for added warmth.",
+            "Floating Hammock: A hammock designed for use on water, with a buoyant frame that keeps it afloat, allowing users to relax on lakes or calm rivers.",
+            "Adaptive Tent: A tent with a flexible frame that can adjust to various terrains, providing stability on uneven surfaces."
+        ];
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const userInput = document.getElementById('userInput');
+            const generateButton = document.getElementById('generateButton');
+            const output = document.getElementById('output');
+
+            generateButton.addEventListener('click', function () {
+                const keyword = userInput.value.toLowerCase();
+                let inventions = [];
+
+                switch (keyword) {
+                    case 'kitchen':
+                        inventions = kitchenInventions;
+                        break;
+                    case 'beauty':
+                        inventions = beautyInventions;
+                        break;
+                    case 'outdoor gear':
+                        inventions = outdoorGearInventions;
+                        break;
+                    default:
+                        inventions = ['Sorry, no inventions found for the entered keyword.'];
+                }
+
+                const randomIndex = Math.floor(Math.random() * inventions.length);
+                const randomInvention = inventions[randomIndex];
+
+                const paragraph = document.createElement('p');
+                paragraph.textContent = randomInvention;
+
+                output.innerHTML = '';
+                output.appendChild(paragraph);
+            });
+        });
+    </script>
+</body>
+</html>
