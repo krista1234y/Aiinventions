@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invention Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px.
+        }
+
+        .output {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .output p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0 0 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invention Generator</h1>
+        <label for="userInput">Mold your world with AI. Enter one of the keywords and let AI do the rest.</label>
+        <input type="text" id="userInput">
+        <button id="generateButton">Generate Invention</button>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        const inventions = {
+            "laundry room": [
+                "Eco-Friendly Laundry Drying Rack: A collapsible drying rack made from sustainable materials, designed to save energy and space.",
+                "Stain-Resistant Laundry Basket: A laundry basket with a special coating that repels stains and odors, keeping it clean and fresh.",
+                "Folding Ironing Board Shelf: A space-saving shelf that doubles as an ironing board, making it easy to iron clothes in small laundry rooms.",
+                "Lint and Dust Cleaning Broom: A specially designed broom with bristles that effectively capture lint and dust from floors and surfaces in the laundry room.",
+                "Laundry Room Odor Neutralizer: An eco-friendly spray that eliminates odors in the laundry room without harmful chemicals.",
+                "Collapsible Hanging Clothes Organizer: A portable organizer with multiple compartments for sorting and storing clothes, perfect for small laundry spaces.",
+                "Biodegradable Clothespins: Environmentally friendly clothespins made from biodegradable materials, reducing plastic waste.",
+                "Folding Laundry Table: A compact table with an ironing board surface that can be folded and stowed away when not in use.",
+            ],
+            "automobile": [
+                "Windshield Rain Repellent Coating: A cost-effective coating that improves visibility during rainy weather by repelling water from car windshields.",
+                "Reusable Car Trash Bag: A durable, washable bag that hangs on the back of car seats, providing a convenient and eco-friendly way to manage car trash.",
+                "Non-Slip Car Floor Mats: Car floor mats made from non-slip, eco-friendly materials to enhance safety and protect car interiors.",
+                "Car Seat Cover with Built-In Storage: A car seat cover that includes pockets and compartments for storing small items like snacks and essentials.",
+                "Solar-Powered Car Air Freshener: A solar-powered air freshener that keeps the car interior smelling fresh and pleasant without the need for batteries.",
+                "Universal Car Cup Holder Organizer: An adjustable organizer that fits into car cup holders, providing storage space for keys, phones, and other small items.",
+                "Car Sunshade with Built-In Phone Charger: A sunshade for car windows with integrated solar panels that can charge your phone while parked.",
+                "Car Door Edge Guards: Low-cost rubber guards that protect car doors from dings and scratches in tight parking spots."
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const userInput = document.getElementById('userInput');
+            const generateButton = document.getElementById('generateButton');
+            const output = document.getElementById('output');
+
+            generateButton.addEventListener('click', function () {
+                const keyword = userInput.value.toLowerCase();
+                let randomInvention = "";
+
+                if (inventions.hasOwnProperty(keyword)) {
+                    const inventionsArray = inventions[keyword];
+                    const randomIndex = Math.floor(Math.random() * inventionsArray.length);
+                    randomInvention = inventionsArray[randomIndex];
+                } else {
+                    randomInvention = "No inventions found for this keyword.";
+                }
+
+                output.innerHTML = `<p>${randomInvention}</p>`;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invention Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px.
+        }
+
+        .output {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .output p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0 0 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invention Generator</h1>
+        <label for="userInput">Mold your world with AI. Enter one of the keywords and let AI do the rest. </label>
+        <input type="text" id="userInput">
+        <button id="generateButton">Generate Invention</button>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        const inventions = {
+            "working out": [
+                "Portable Resistance Bands: A set of compact resistance bands that can be easily carried for on-the-go workouts.",
+                "Exercise Mat with Built-In Cooling: An exercise mat with a cooling gel layer to keep you comfortable during workouts.",
+                "Adjustable Dumbbell Grips: Grips that can be attached to standard water bottles to turn them into adjustable dumbbells.",
+                "Foldable Yoga Block: A collapsible yoga block for convenient storage and transport.",
+                "Resistance Band Door Anchor: An anchor that attaches resistance bands to doors for versatile home workouts.",
+                "Non-Slip Workout Gloves: Gloves with silicone grips for a secure hold during weightlifting and other exercises.",
+            ],
+            "gardening": [
+                "Plant Watering Globe: A self-watering glass globe that provides a steady supply of water to potted plants.",
+                "Garden Kneeler Seat: A padded kneeler that can also be flipped to become a comfortable garden seat.",
+                "Collapsible Garden Bucket: A foldable bucket for collecting garden waste or carrying tools.",
+                "Seedling Starter Trays: Biodegradable seedling trays that can be planted directly into the ground.",
+                "Plant Marker Stakes: Stakes with erasable labels for easy plant identification in the garden.",
+                "Garden Tool Organizer Apron: An apron with multiple pockets for carrying small gardening tools and accessories.",
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const userInput = document.getElementById('userInput');
+            const generateButton = document.getElementById('generateButton');
+            const output = document.getElementById('output');
+
+            generateButton.addEventListener('click', function () {
+                const keyword = userInput.value.toLowerCase();
+                let randomInvention = "";
+
+                if (inventions.hasOwnProperty(keyword)) {
+                    const inventionsArray = inventions[keyword];
+                    const randomIndex = Math.floor(Math.random() * inventionsArray.length);
+                    randomInvention = inventionsArray[randomIndex];
+                } else {
+                    randomInvention = "No inventions found for this keyword.";
+                }
+
+                output.innerHTML = `<p>${randomInvention}</p>`;
+            });
+        });
+    </script>
+</body>
+</html>

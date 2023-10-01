@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invention Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px.
+        }
+
+        .output {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .output p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0 0 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invention Generator</h1>
+        <label for="userInput">Mold your world with AI. Enter one of the keywords and let AI do the rest. </label>
+        <input type="text" id="userInput">
+        <button id="generateButton">Generate Invention</button>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        const inventions = {
+            "bedroom": [
+                "Space-Saving Bedside Table: A compact, wall-mounted bedside table with integrated storage for books and small items.",
+                "Under-Bed Shoe Organizer: A fabric organizer that fits under the bed, providing convenient storage for shoes and accessories.",
+                "Sleep-Enhancing Aroma Diffuser: A diffuser that releases calming scents to improve sleep quality and relaxation in the bedroom.",
+                "Ergonomic Pillow for Neck Support: A specially designed pillow that offers optimal neck support and comfort for a restful sleep.",
+                "Bedroom Plant Wall: A wall-mounted plant holder for easy access to fresh air-purifying plants in the bedroom.",
+                "LED Bookshelf Lighting: Energy-efficient LED lighting strips that can be installed on bookshelves for better visibility and ambiance.",
+                "Anti-Allergen Bedding: Hypoallergenic bedding sets that prevent allergies and provide a comfortable night's sleep.",
+                "Smartphone Charging Nightstand: A nightstand with built-in wireless charging for smartphones and tablets.",
+            ],
+            "workplace": [
+                "Ergonomic Standing Desk Converter: A cost-effective converter that turns a regular desk into an ergonomic standing desk for improved posture.",
+                "Desk Drawer Organizer: A customizable organizer that fits in desk drawers, helping to keep pens, papers, and small items neatly arranged.",
+                "Noise-Canceling Cubicle Divider: A portable, noise-canceling partition for open office spaces, providing privacy and focus.",
+                "Eco-Friendly Office Supplies: Sustainable office supplies made from recycled materials, including pens, notebooks, and binders.",
+                "Wireless Charging Mouse Pad: A mouse pad with integrated wireless charging for smartphones and other devices.",
+                "Desk Plant Air Purifier: A small desktop plant holder with air-purifying plants to improve air quality in the workplace.",
+                "Adjustable Monitor Stand: A stand that elevates computer monitors to eye level, reducing strain on the neck and improving ergonomics.",
+                "Cable Management Clips: Adhesive clips that keep cables and wires organized and prevent tangling on the desk."
+            ]
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const userInput = document.getElementById('userInput');
+            const generateButton = document.getElementById('generateButton');
+            const output = document.getElementById('output');
+
+            generateButton.addEventListener('click', function () {
+                const keyword = userInput.value.toLowerCase();
+                let randomInvention = "";
+
+                if (inventions.hasOwnProperty(keyword)) {
+                    const inventionsArray = inventions[keyword];
+                    const randomIndex = Math.floor(Math.random() * inventionsArray.length);
+                    randomInvention = inventionsArray[randomIndex];
+                } else {
+                    randomInvention = "No inventions found for this keyword.";
+                }
+
+                output.innerHTML = `<p>${randomInvention}</p>`;
+            });
+        });
+    </script>
+</body>
+</html>
