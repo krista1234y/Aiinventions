@@ -2,9 +2,9 @@ header{
 	/*font-family: Shrikhand;*/
 	width:100%;
 	padding:0%;
-	text-align: center;
 	border-bottom-style: solid;
 	border-color:#3d85c6;
+	text-align: left;
 	/*background-color:rgba(104, 198, 144, 0.5);
 	border-top-style: solid;
 	border-width:5px;
@@ -15,27 +15,75 @@ header{
 	transition: opacity .5s ease-in-out;*/
 }
 
-#categories{
-	padding-top:3%;
-	padding-bottom:3%;
+#categories_hbutton{
+	/*id for the hamburger button*/
+	border-radius: 50%;
+	background-color: #3d85c6;
+	color:whitesmoke;
+	font-size: 60px;
+	height: 80px;
+	width: 80px;
+	align-items: center;
+	justify-content: center;
 }
 
-#categories button{
+#categories{
+	padding-top:2%;
+	padding-bottom:2%;
+	text-align: left;
+}
+
+.menu button{
+	/*these are the main buttons that come out of the categories menu*/
 	border-style: solid;
 	border-radius: 20px;
 	border-color: #3d85c6;
 	background-color: #cfe2f3;
-	margin: 0.5%;
-	padding: 1%;
+	margin: 2%;
+	padding: 2%;
 	font-size: 1.2em;
 	color:black;
-	transition: color .5s ease-in-out, background-color .5s ease-in-out;
+	/*transition: color .5s ease-in-out, background-color .5s ease-in-out;*/
 	/*text-decoration: none;*/
 }
 
-#categories button:hover{
+.menu button:hover{
 	background-color: #3d85c6;
 	color:whitesmoke;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: -20%;
+	width: 20%;
+	height: 100%;
+	background-color: #cfe2f3;
+	/*color: #396140;*/
+	transition: all 0.3s ease-in-out;
+	z-index: 4;
+}
+
+.menu.open {
+	left: 0;
+}
+
+.menu_close{
+	border-radius: 20px;
+	font-size: 50px;
+	position: fixed;
+	top: 0;
+	left: -50px;
+	/*width: 50px;
+	height: 50px;*/
+	background-color: #3d85c6;
+	color:whitesmoke;
+	transition: all 0.3s ease-in-out;
+	z-index: 4;
+}
+
+.menu_close.show{
+	left:22%;
 }
 
 /*.styled:active {
