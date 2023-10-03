@@ -1,0 +1,45 @@
+header{
+	/*font-family: Shrikhand;*/
+	width:100%;
+	padding:0%;
+	text-align: center;
+	border-bottom-style: solid;
+	border-color:#3d85c6;
+	/*background-color:rgba(104, 198, 144, 0.5);
+	border-top-style: solid;
+	border-width:5px;
+	position: fixed;
+	opacity: 1.0;
+	transition: background-color 1.0s ease;
+	z-index: 1;
+	transition: opacity .5s ease-in-out;*/
+}
+
+#categories{
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+#categories button{
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #3d85c6;
+	background-color: #cfe2f3;
+	margin: 0.5%;
+	padding: 1%;
+	font-size: 1.2em;
+	color:black;
+	transition: color .5s ease-in-out, background-color .5s ease-in-out;
+	/*text-decoration: none;*/
+}
+
+#categories button:hover{
+	background-color: #3d85c6;
+	color:whitesmoke;
+}
+
+/*.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}*/
