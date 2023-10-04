@@ -1,10 +1,11 @@
 header{
 	/*font-family: Shrikhand;*/
 	width:100%;
-	padding:0%;
 	border-bottom-style: solid;
 	border-color:#3d85c6;
-	text-align: left;
+	text-align: center;
+	margin-bottom: 2%;
+	z-index: 1;
 	/*background-color:rgba(104, 198, 144, 0.5);
 	border-top-style: solid;
 	border-width:5px;
@@ -28,13 +29,23 @@ header{
 }
 
 #categories{
-	padding-top:2%;
+	/*padding-top:2%;*/
 	padding-bottom:2%;
-	text-align: left;
+	text-align: center;
+	overflow: hidden;
 }
 
-.menu button{
+#categories h1{
+
+}
+
+#categories button{
+	float:left;
+}
+
+.menu a{
 	/*these are the main buttons that come out of the categories menu*/
+	display:inline-block;
 	border-style: solid;
 	border-radius: 20px;
 	border-color: #3d85c6;
@@ -47,7 +58,7 @@ header{
 	/*text-decoration: none;*/
 }
 
-.menu button:hover{
+.menu a:hover{
 	background-color: #3d85c6;
 	color:whitesmoke;
 }
@@ -62,6 +73,7 @@ header{
 	/*color: #396140;*/
 	transition: all 0.3s ease-in-out;
 	z-index: 4;
+	text-align: left;
 }
 
 .menu.open {
@@ -90,4 +102,63 @@ header{
   box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.main_head {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.top_label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#userInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#generateButton {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*.output {
+   margin-top: 30px;
+   text-align: left;
+}
+
+.output p {
+  font-size: 18px;
+	line-height: 1.5;
+  margin: 0 0 20px;
+  color: #333;
 }*/

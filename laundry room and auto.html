@@ -1,74 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invention Generator</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 40px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #007BFF;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            font-size: 18px;
-            color: #333;
-        }
-
-        input[type="text"] {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            font-size: 16px;
-        }
-
-        button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px.
-        }
-
-        .output {
-            margin-top: 30px;
-            text-align: left;
-        }
-
-        .output p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin: 0 0 20px;
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" media="screen" href="ai-inventions.css">
+    <script type="text/javascript" src="ai-inventions.js"></script>
 </head>
 <body>
+    <header>
+        <div id=categories>
+            <button id=categories_hbutton>&#9776;</button>
+            <h1>AI Inventions</h1>
+        </div>
+    </header>
+    <div class="menu" id="sidebar">
+        <a href="4ardasd.html">Beauty, kitchen and outdoor gear</a>
+        <a href="workingout-gardening.html">Working out and gardening</a>
+        <a href="laundry room and auto.html">Laundry room and auto</a>
+        <a href="bathroom_school.html">Bathroom and school</a>
+        <a href="bedroom_workplace.html">Bedroom and workplace</a>
+    </div>
+    <div class="menu_close">
+        X
+    </div>
     <div class="container">
-        <h1>Invention Generator</h1>
-        <label for="userInput">Mold your world with AI. Enter one of the keywords and let AI do the rest.</label>
+        <h1 class="main_head">Invention Generator</h1>
+        <label for="userInput" class="top_label">Mold your world with AI. Enter one of the keywords and let AI do the rest.</label>
         <input type="text" id="userInput">
         <button id="generateButton">Generate Invention</button>
         <div class="output" id="output"></div>
