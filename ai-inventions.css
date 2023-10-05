@@ -151,6 +151,28 @@ body {
     font-size: 16px;
 }
 
+#categories_body{
+	/*this will be used as the body of the new interface*/
+
+}
+
+#categories_body button{
+	display:inline-block;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #3d85c6;
+	background-color: #cfe2f3;
+	margin: 0.5%;
+	padding: 1%;
+	font-size: 1.2em;
+	color:black;
+}
+
+#categories_body button:hover{
+	background-color: #3d85c6;
+	color:whitesmoke;
+}
+
 /*.output {
    margin-top: 30px;
    text-align: left;
