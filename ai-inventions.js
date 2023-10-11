@@ -9,19 +9,7 @@ const kitchenInventions = [
     "Adjustable Measuring Cup for Dry Ingredients: A measuring cup with an adjustable slider for precise measurement of dry ingredients, eliminating the need for multiple cups.",
     "Expandable Under-Sink Organizer with Adjustable Shelves: An organizer with adjustable shelves and compartments for maximizing storage space under the kitchen sink.",
     "Adjustable Rolling Cookie Cutter with Interchangeable Shapes: A rolling cookie cutter with interchangeable discs to create various cookie shapes and sizes.",
-    "Collapsible Funnel with Integrated Strainer: A collapsible silicone funnel with an attached strainer for filtering liquids directly into bottles or jars.",
-    "Herb Stripper: This tool looks like a mini comb with small, sharp edges. It allows you to easily strip the leaves from herbs like rosemary or thyme without the hassle of doing it by hand.",
-    "Avocado Slicer: This gadget has a blade for cutting through the avocado's skin, a pit remover, and a slicer to create perfectly even avocado slices for salads and sandwiches.",
-    "Citrus Sprayer: Shaped like a small pump, this invention allows you to spray citrus juice directly from the fruit. Simply insert it into the fruit and pump to release the juice.",
-    "Egg Cuber: This device turns boiled eggs into perfect cubes. It's great for creating unique presentations or for making fun, bite-sized snacks.",
-    "Butter Spreader Knife: This knife has multiple small perforations along the blade. It allows you to easily spread cold butter on bread without tearing it.",
-    "Bagel Guillotine: Shaped like a miniature guillotine, this device allows you to slice bagels perfectly in half without the risk of uneven cuts.",
-    "Corn Stripper: This tool resembles a peeler with jagged edges. It effortlessly removes kernels from the cob, saving you time and reducing mess.",
-    "Silicone Food Huggers: These are silicone covers designed to fit over cut fruits and vegetables. They help keep them fresh for longer and reduce food waste.",
-    "Onion Holder: This gadget looks like a small fork with sharp prongs. It holds the onion securely in place while you slice, preventing slips and cuts.",
-    "Non-Stick Pancake Pen: Resembling a large syringe, this tool allows you to dispense pancake batter in precise shapes or designs. It's great for creative pancake art.",
-    "Rotary Cheese Grater: This grater has a handle that you turn to grate cheese. It's faster and more convenient than traditional box graters.",
-    "Spoon Rest with Drip Catcher: This spoon rest has a built-in drip catcher to collect any drips from your stirring spoon, keeping your counter clean."	
+    "Collapsible Funnel with Integrated Strainer: A collapsible silicone funnel with an attached strainer for filtering liquids directly into bottles or jars."
 ];
 
 const beautyInventions = [
@@ -37,19 +25,7 @@ const beautyInventions = [
     "Customizable Clay Face Mask Palette: A palette containing various natural clay powders, allowing users to mix their own custom face masks for different skin needs.",
     "Herbal-Infused Bath Tea Bags with Reusable Mesh Infuser: Bath tea bags filled with a blend of dried herbs and flowers that can be steeped in warm water for a fragrant and skin-soothing bath.",
     "Aromatherapy Scented Sachets for Drawers and Closets: Sachets infused with essential oils and dried botanicals, providing a natural and aromatic way to freshen up drawers and closets."
-    "Nail Polish Holder Ring: They provide a convenient way to keep your nail polish bottle within reach while painting your nails.",
-    "Hair Dryer Stand: A hands free stand for your hairdryer.",
-    "Eyebrow Stencil Kit: Eyebrow stencil kit, including reusable adhesive stencils.",
-    "Brush Cleaning Mat: Makeup Brush Cleaning mat made from silicone.",
-    "Hair Velcro Rollers with Built in Combs: Hair rollers with embedded combs to give your locks a shiny lucious curl.",
-    "Brow Shaper Tool: A small, handheld tool with a precision blade designed for shaping and grooming eyebrows. It allows for precise hair removal without the need for waxing or threading.",
-    "Facial Ice Roller: A handheld roller filled with gel or water that you freeze. It's designed to be rolled over the face to reduce puffiness, calm inflammation, and improve circulation.",
-    "Hair Diffusing Socks: Specially designed socks with a unique fabric that diffuses heat from a hair dryer. They're used to achieve natural, voluminous curls without causing frizz.",
-    "Eyeliner Stencil Guide: Reusable adhesive stencils that help create perfectly even and symmetrical eyeliner wings or other eyeliner styles.",
-    "Shampoo Massaging Brush: A handheld brush with soft silicone bristles designed to massage and exfoliate the scalp while shampooing. It promotes healthy hair growth and can help remove buildup.",
-    "Silicone Makeup Sponge: A non-porous, silicone sponge designed for applying and blending makeup. It prevents product absorption, ensuring a flawless finish and saving makeup."
 ];
-
 const outdoorGearInventions = [
    "Adjustable Paracord Hammock with Integrated Insect Netting - A hammock with adjustable suspension using paracord, and integrated insect netting to provide a bug-free resting experience.",
    "Solar-Powered Lantern with Inflatable Body for Compact Storage - A lantern powered by solar energy, featuring an inflatable body that can be collapsed for easy storage and transport.",
@@ -60,7 +36,6 @@ const outdoorGearInventions = [
    "Floating Hammock: A hammock designed for use on water, with a buoyant frame that keeps it afloat, allowing users to relax on lakes or calm rivers.",
    "Adaptive Tent: A tent with a flexible frame that can adjust to various terrains, providing stability on uneven surfaces."
 ];
-
 const bathroom = [
     "Water-Saving Showerhead Attachment: An attachment for showerheads that reduces water consumption without compromising water pressure.",
     "Biodegradable Toilet Brush: A toilet brush made from eco-friendly materials that naturally decompose over time.",
@@ -71,7 +46,6 @@ const bathroom = [
     "Dual-Purpose Faucet Aerator: An aerator that doubles as a water filter, providing clean drinking water directly from the faucet.",
     "Toilet Seat Lifter: A foot-operated device that lifts and lowers the toilet seat, promoting hygiene and convenience.",
 ];
-
 const school = [
     "Eco-Friendly School Supplies Set: A set of school supplies made from recycled and sustainable materials, including pencils, notebooks, and binders.",
     "Homework Organizer App: An app that helps students organize their homework, assignments, and study schedules efficiently.",
@@ -82,7 +56,6 @@ const school = [
     "Homemade Glue from Natural Ingredients: A recipe for making eco-friendly glue using household ingredients like flour and water.",
     "Reusable Lunchbox Set: A set of reusable lunch containers and utensils to reduce single-use plastic waste in school lunches."
 ];
-
 const bedroom = [
    "Space-Saving Bedside Table: A compact, wall-mounted bedside table with integrated storage for books and small items.",
    "Under-Bed Shoe Organizer: A fabric organizer that fits under the bed, providing convenient storage for shoes and accessories.",
@@ -93,7 +66,6 @@ const bedroom = [
    "Anti-Allergen Bedding: Hypoallergenic bedding sets that prevent allergies and provide a comfortable night's sleep.",
    "Smartphone Charging Nightstand: A nightstand with built-in wireless charging for smartphones and tablets.",
 ];
-
 const workplaceItems = [
     "Ergonomic Standing Desk Converter: A cost-effective converter that turns a regular desk into an ergonomic standing desk for improved posture.",
     "Desk Drawer Organizer: A customizable organizer that fits in desk drawers, helping to keep pens, papers, and small items neatly arranged.",
@@ -104,7 +76,6 @@ const workplaceItems = [
     "Adjustable Monitor Stand: A stand that elevates computer monitors to eye level, reducing strain on the neck and improving ergonomics.",
     "Cable Management Clips: Adhesive clips that keep cables and wires organized and prevent tangling on the desk."
 ];
-
 const laundryRoomInventions = [
     "Eco-Friendly Laundry Drying Rack: A collapsible drying rack made from sustainable materials, designed to save energy and space.",
     "Stain-Resistant Laundry Basket: A laundry basket with a special coating that repels stains and odors, keeping it clean and fresh.",
