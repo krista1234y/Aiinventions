@@ -3,12 +3,7 @@ const categories = ["Kitchen Inventions", "Beauty Inventions", "Outdoor Gear Inv
 	"Laundry room", "Bedroom", "Workplace items", "Automobile inventions", "Working out inventions", "Gardening inventions"];
 
 const kitchenInventions = [
-    "Magnetic Utensil Holder for Stove: A magnetic strip that attaches to the stove or range hood, providing a convenient spot to hang cooking utensils.<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script><stripe-buy-button
-  buy-button-id="buy_btn_1NzKZKFxc6slt6rBZGPqXAvc"
-  publishable-key="pk_live_51NzFtNFxc6slt6rB3yCzmpGPhEX3apYNmfpul2r8bfreNN942TKogNlEVTV47qnxmsV9oJPlJo2qpS3PzR4M8oGu008dR7fPrz"
-></stripe-buy-button> ",
+    "Magnetic Utensil Holder for Stove: A magnetic strip that attaches to the stove or range hood, providing a convenient spot to hang cooking utensils.",
     "Compact Handheld Vegetable Spiralizer: A small, easy-to-use tool for creating spiralized vegetables, promoting healthy eating habits.",
     "Non-Slip Pot and Pan Handle Covers: Heat-resistant silicone covers that slide onto handles, providing a secure grip and preventing burns.",
     "Adjustable Measuring Cup for Dry Ingredients: A measuring cup with an adjustable slider for precise measurement of dry ingredients, eliminating the need for multiple cups.",
