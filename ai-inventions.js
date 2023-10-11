@@ -3,13 +3,30 @@ const categories = ["Kitchen Inventions", "Beauty Inventions", "Outdoor Gear Inv
 	"Laundry room", "Bedroom", "Workplace items", "Automobile inventions", "Working out inventions", "Gardening inventions"];
 
 const kitchenInventions = [
-    "Magnetic Utensil Holder for Stove: A magnetic strip that attaches to the stove or range hood, providing a convenient spot to hang cooking utensils.",
+    "Magnetic Utensil Holder for Stove: A magnetic strip that attaches to the stove or range hood, providing a convenient spot to hang cooking utensils.<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script><stripe-buy-button
+  buy-button-id="buy_btn_1NzKZKFxc6slt6rBZGPqXAvc"
+  publishable-key="pk_live_51NzFtNFxc6slt6rB3yCzmpGPhEX3apYNmfpul2r8bfreNN942TKogNlEVTV47qnxmsV9oJPlJo2qpS3PzR4M8oGu008dR7fPrz"
+></stripe-buy-button> ",
     "Compact Handheld Vegetable Spiralizer: A small, easy-to-use tool for creating spiralized vegetables, promoting healthy eating habits.",
     "Non-Slip Pot and Pan Handle Covers: Heat-resistant silicone covers that slide onto handles, providing a secure grip and preventing burns.",
     "Adjustable Measuring Cup for Dry Ingredients: A measuring cup with an adjustable slider for precise measurement of dry ingredients, eliminating the need for multiple cups.",
     "Expandable Under-Sink Organizer with Adjustable Shelves: An organizer with adjustable shelves and compartments for maximizing storage space under the kitchen sink.",
     "Adjustable Rolling Cookie Cutter with Interchangeable Shapes: A rolling cookie cutter with interchangeable discs to create various cookie shapes and sizes.",
-    "Collapsible Funnel with Integrated Strainer: A collapsible silicone funnel with an attached strainer for filtering liquids directly into bottles or jars."
+    "Collapsible Funnel with Integrated Strainer: A collapsible silicone funnel with an attached strainer for filtering liquids directly into bottles or jars.",
+    "Herb Stripper: This tool looks like a mini comb with small, sharp edges. It allows you to easily strip the leaves from herbs like rosemary or thyme without the hassle of doing it by hand.",
+    "Avocado Slicer: This gadget has a blade for cutting through the avocado's skin, a pit remover, and a slicer to create perfectly even avocado slices for salads and sandwiches.",
+    "Citrus Sprayer: Shaped like a small pump, this invention allows you to spray citrus juice directly from the fruit. Simply insert it into the fruit and pump to release the juice.",
+    "Egg Cuber: This device turns boiled eggs into perfect cubes. It's great for creating unique presentations or for making fun, bite-sized snacks.",
+    "Butter Spreader Knife: This knife has multiple small perforations along the blade. It allows you to easily spread cold butter on bread without tearing it.",
+    "Bagel Guillotine: Shaped like a miniature guillotine, this device allows you to slice bagels perfectly in half without the risk of uneven cuts.",
+    "Corn Stripper: This tool resembles a peeler with jagged edges. It effortlessly removes kernels from the cob, saving you time and reducing mess.",
+    "Silicone Food Huggers: These are silicone covers designed to fit over cut fruits and vegetables. They help keep them fresh for longer and reduce food waste.",
+    "Onion Holder: This gadget looks like a small fork with sharp prongs. It holds the onion securely in place while you slice, preventing slips and cuts.",
+    "Non-Stick Pancake Pen: Resembling a large syringe, this tool allows you to dispense pancake batter in precise shapes or designs. It's great for creative pancake art.",
+    "Rotary Cheese Grater: This grater has a handle that you turn to grate cheese. It's faster and more convenient than traditional box graters.",
+    "Spoon Rest with Drip Catcher: This spoon rest has a built-in drip catcher to collect any drips from your stirring spoon, keeping your counter clean."	
 ];
 
 const beautyInventions = [
