@@ -49,6 +49,7 @@ const beautyInventions = [
     "Shampoo Massaging Brush: A handheld brush with soft silicone bristles designed to massage and exfoliate the scalp while shampooing. It promotes healthy hair growth and can help remove buildup.",
     "Silicone Makeup Sponge: A non-porous, silicone sponge designed for applying and blending makeup. It prevents product absorption, ensuring a flawless finish and saving makeup."
 ];
+
 const outdoorGearInventions = [
    "Adjustable Paracord Hammock with Integrated Insect Netting - A hammock with adjustable suspension using paracord, and integrated insect netting to provide a bug-free resting experience.",
    "Solar-Powered Lantern with Inflatable Body for Compact Storage - A lantern powered by solar energy, featuring an inflatable body that can be collapsed for easy storage and transport.",
@@ -59,6 +60,7 @@ const outdoorGearInventions = [
    "Floating Hammock: A hammock designed for use on water, with a buoyant frame that keeps it afloat, allowing users to relax on lakes or calm rivers.",
    "Adaptive Tent: A tent with a flexible frame that can adjust to various terrains, providing stability on uneven surfaces."
 ];
+
 const bathroom = [
     "Water-Saving Showerhead Attachment: An attachment for showerheads that reduces water consumption without compromising water pressure.",
     "Biodegradable Toilet Brush: A toilet brush made from eco-friendly materials that naturally decompose over time.",
@@ -69,6 +71,7 @@ const bathroom = [
     "Dual-Purpose Faucet Aerator: An aerator that doubles as a water filter, providing clean drinking water directly from the faucet.",
     "Toilet Seat Lifter: A foot-operated device that lifts and lowers the toilet seat, promoting hygiene and convenience.",
 ];
+
 const school = [
     "Eco-Friendly School Supplies Set: A set of school supplies made from recycled and sustainable materials, including pencils, notebooks, and binders.",
     "Homework Organizer App: An app that helps students organize their homework, assignments, and study schedules efficiently.",
@@ -79,6 +82,7 @@ const school = [
     "Homemade Glue from Natural Ingredients: A recipe for making eco-friendly glue using household ingredients like flour and water.",
     "Reusable Lunchbox Set: A set of reusable lunch containers and utensils to reduce single-use plastic waste in school lunches."
 ];
+
 const bedroom = [
    "Space-Saving Bedside Table: A compact, wall-mounted bedside table with integrated storage for books and small items.",
    "Under-Bed Shoe Organizer: A fabric organizer that fits under the bed, providing convenient storage for shoes and accessories.",
@@ -89,6 +93,7 @@ const bedroom = [
    "Anti-Allergen Bedding: Hypoallergenic bedding sets that prevent allergies and provide a comfortable night's sleep.",
    "Smartphone Charging Nightstand: A nightstand with built-in wireless charging for smartphones and tablets.",
 ];
+
 const workplaceItems = [
     "Ergonomic Standing Desk Converter: A cost-effective converter that turns a regular desk into an ergonomic standing desk for improved posture.",
     "Desk Drawer Organizer: A customizable organizer that fits in desk drawers, helping to keep pens, papers, and small items neatly arranged.",
@@ -99,6 +104,7 @@ const workplaceItems = [
     "Adjustable Monitor Stand: A stand that elevates computer monitors to eye level, reducing strain on the neck and improving ergonomics.",
     "Cable Management Clips: Adhesive clips that keep cables and wires organized and prevent tangling on the desk."
 ];
+
 const laundryRoomInventions = [
     "Eco-Friendly Laundry Drying Rack: A collapsible drying rack made from sustainable materials, designed to save energy and space.",
     "Stain-Resistant Laundry Basket: A laundry basket with a special coating that repels stains and odors, keeping it clean and fresh.",
