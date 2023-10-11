@@ -37,6 +37,17 @@ const beautyInventions = [
     "Customizable Clay Face Mask Palette: A palette containing various natural clay powders, allowing users to mix their own custom face masks for different skin needs.",
     "Herbal-Infused Bath Tea Bags with Reusable Mesh Infuser: Bath tea bags filled with a blend of dried herbs and flowers that can be steeped in warm water for a fragrant and skin-soothing bath.",
     "Aromatherapy Scented Sachets for Drawers and Closets: Sachets infused with essential oils and dried botanicals, providing a natural and aromatic way to freshen up drawers and closets."
+    "Nail Polish Holder Ring: They provide a convenient way to keep your nail polish bottle within reach while painting your nails.",
+    "Hair Dryer Stand: A hands free stand for your hairdryer.",
+    "Eyebrow Stencil Kit: Eyebrow stencil kit, including reusable adhesive stencils.",
+    "Brush Cleaning Mat: Makeup Brush Cleaning mat made from silicone.",
+    "Hair Velcro Rollers with Built in Combs: Hair rollers with embedded combs to give your locks a shiny lucious curl.",
+    "Brow Shaper Tool: A small, handheld tool with a precision blade designed for shaping and grooming eyebrows. It allows for precise hair removal without the need for waxing or threading.",
+    "Facial Ice Roller: A handheld roller filled with gel or water that you freeze. It's designed to be rolled over the face to reduce puffiness, calm inflammation, and improve circulation.",
+    "Hair Diffusing Socks: Specially designed socks with a unique fabric that diffuses heat from a hair dryer. They're used to achieve natural, voluminous curls without causing frizz.",
+    "Eyeliner Stencil Guide: Reusable adhesive stencils that help create perfectly even and symmetrical eyeliner wings or other eyeliner styles.",
+    "Shampoo Massaging Brush: A handheld brush with soft silicone bristles designed to massage and exfoliate the scalp while shampooing. It promotes healthy hair growth and can help remove buildup.",
+    "Silicone Makeup Sponge: A non-porous, silicone sponge designed for applying and blending makeup. It prevents product absorption, ensuring a flawless finish and saving makeup."
 ];
 const outdoorGearInventions = [
    "Adjustable Paracord Hammock with Integrated Insect Netting - A hammock with adjustable suspension using paracord, and integrated insect netting to provide a bug-free resting experience.",
