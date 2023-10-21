@@ -56,7 +56,7 @@ const outdoorGearInventions = [
    { name: "Multi-Tool Hiking Pole with Integrated Compass and Detachable Knife - A hiking pole with a built-in compass for navigation and a detachable knife for versatile outdoor use.",
    link: "https://www.google.com/"},
    { name: "Scented Fire Starter Logs with Embedded Natural Fragrances - Fire starter logs infused with natural scents for a pleasant aroma while lighting fires.",
-   link: "https://www.google.com/"},
+   link: "https://buy.stripe.com/9AQ5lYdGhdQG6Zi5kB"},
    { name: "Self-Inflating Sleeping Pad with Built-In Pillow and Insulated Side Panels - A lightweight sleeping pad that self-inflates for comfort, featuring an integrated pillow and insulated side panels for added warmth.",
    link: "https://buy.stripe.com/14k9CedGh8wm1EY28s"},
    { name: "Floating Hammock: A hammock designed for use on water, with a buoyant frame that keeps it afloat, allowing users to relax on lakes or calm rivers.",
@@ -82,11 +82,11 @@ const bathroom = [
     { name: "Toilet Seat Lifter: A foot-operated device that lifts and lowers the toilet seat, promoting hygiene and convenience.",
     link: "https://buy.stripe.com/cN29Ce8lX4g63N63cA"},
     { name: "Toilet Night Light with Motion Sensor: This is a small LED light that attaches to the rim of your toilet bowl. It turns on automatically when it senses motion, providing a soft, ambient glow in the dark.",
-    link: "https://www.google.com/"},
+    link: "https://buy.stripe.com/fZedSuau5cMCgzS00K"},
     { name: "Water-Powered Toothbrush: This toothbrush uses a small, built-in water reservoir to power its bristle vibrations. It's a great eco-friendly alternative to electric toothbrushes.",
-    link: "https://www.google.com/"},
+    link: "https://buy.stripe.com/fZe01Eau5dQG5Ve00L"},
     { name: "Shower Head with Built-In Bluetooth Speaker: This shower head comes with a built-in speaker that connects to your phone via Bluetooth. You can enjoy your favorite tunes or podcasts while getting clean.",
-    link: "https://www.google.com/"}
+    link: "https://buy.stripe.com/fZe3dQau5fYO0AUbJu"}
 ];
 const school = [
     { name: "Eco-Friendly School Supplies Set: A set of school supplies made from recycled and sustainable materials, including pencils, notebooks, and binders.",
@@ -128,11 +128,11 @@ const workplaceItems = [
     { name: "Ergonomic Standing Desk Converter: A cost-effective converter that turns a regular desk into an ergonomic standing desk for improved posture.",
       link: "https://www.google.com/"},
     { name: "Desk Drawer Organizer: A customizable organizer that fits in desk drawers, helping to keep pens, papers, and small items neatly arranged.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/28o4hUcCdeUKdnG00E"},
     { name: "Noise-Canceling Cubicle Divider: A portable, noise-canceling partition for open office spaces, providing privacy and focus.",
       link: "https://www.google.com/"},
     { name: "Eco-Friendly Office Supplies: Sustainable office supplies made from recycled materials, including pens, notebooks, and binders.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/aEU8ya9q13c26Zi15q"},
     { name: "Wireless Charging Mouse Pad: A mouse pad with integrated wireless charging for smartphones and other devices.",
       link: "https://www.google.com/"},
     { name: "Desk Plant Air Purifier: A small desktop plant holder with air-purifying plants to improve air quality in the workplace.",
@@ -146,17 +146,17 @@ const laundryRoomInventions = [
     { name: "Eco-Friendly Laundry Drying Rack: A collapsible drying rack made from sustainable materials, designed to save energy and space.",
       link: "https://www.google.com/"},
     { name: "Stain-Resistant Laundry Basket: A laundry basket with a special coating that repels stains and odors, keeping it clean and fresh.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/7sI6q21Xz4g6abu15r"},
     { name: "Folding Ironing Board Shelf: A space-saving shelf that doubles as an ironing board, making it easy to iron clothes in small laundry rooms.",
       link: "https://www.google.com/"},
     { name: "Lint and Dust Cleaning Broom: A specially designed broom with bristles that effectively capture lint and dust from floors and surfaces in the laundry room.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/bIYg0C7hTcMCcjC3dA"},
     { name: "Laundry Room Odor Neutralizer: An eco-friendly spray that eliminates odors in the laundry room without harmful chemicals.",
       link: "https://buy.stripe.com/eVadSugSt4g6gzSfZu"},
     { name: "Collapsible Hanging Clothes Organizer: A portable organizer with multiple compartments for sorting and storing clothes, perfect for small laundry spaces.",
       link: "https://buy.stripe.com/14k5lY8lX13UgzS00u"},
     { name: "Biodegradable Clothespins: Environmentally friendly clothespins made from biodegradable materials, reducing plastic waste.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/cN201Eau5eUK5Ve29x"},
     { name: "Folding Laundry Table: A compact table with an ironing board surface that can be folded and stowed away when not in use.",
       link: "https://www.google.com/"},
     { name: "Laundry Room Odor Absorbers: Scented pouches or containers filled with natural odor-absorbing materials to keep the laundry room smelling fresh.",
@@ -172,11 +172,11 @@ const laundryRoomInventions = [
 
 const automobileInventions = [
     { name: "Windshield Rain Repellent Coating: A cost-effective coating that improves visibility during rainy weather by repelling water from car windshields.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/aEUdSu0Tv6oe83meWk"},
     { name: "Reusable Car Trash Bag: A durable, washable bag that hangs on the back of car seats, providing a convenient and eco-friendly way to manage car trash.",
       link: "https://buy.stripe.com/9AQg0C31D4g6cjC9Bj"},
     { name: "Non-Slip Car Floor Mats: Car floor mats made from non-slip, eco-friendly materials to enhance safety and protect car interiors.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/bIYcOq0Tv13U6Zi6pP"},
     { name: "Car Seat Cover with Built-In Storage: A car seat cover that includes pockets and compartments for storing small items like snacks and essentials.",
       link: "https://buy.stripe.com/bIYcOq9q113UdnGdRy"},
     { name: "Solar-Powered Car Air Freshener: A solar-powered air freshener that keeps the car interior smelling fresh and pleasant without the need for batteries.",
@@ -186,12 +186,12 @@ const automobileInventions = [
     { name: "Car Sunshade with Built-In Phone Charger: A sunshade for car windows with integrated solar panels that can charge your phone while parked.",
       link: "https://www.google.com/"},
     { name: "Car Door Edge Guards: Low-cost rubber guards that protect car doors from dings and scratches in tight parking spots.",
-      link: "https://www.google.com/"}
+      link: "https://buy.stripe.com/fZeaGi59L27YcjCcOe"}
 ];
 
 const workingOutInventions = [
     { name: "Portable Resistance Bands: A set of compact resistance bands that can be easily carried for on-the-go workouts.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/7sI15IfOp5ka3N6dSj"},
     { name: "Exercise Mat with Built-In Cooling: An exercise mat with a cooling gel layer to keep you comfortable during workouts.",
       link: "https://www.google.com/"},
     { name: "Adjustable Dumbbell Grips: Grips that can be attached to standard water bottles to turn them into adjustable dumbbells.",
