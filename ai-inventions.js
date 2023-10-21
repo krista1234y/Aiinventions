@@ -193,30 +193,30 @@ const workingOutInventions = [
     { name: "Portable Resistance Bands: A set of compact resistance bands that can be easily carried for on-the-go workouts.",
       link: "https://buy.stripe.com/7sI15IfOp5ka3N6dSj"},
     { name: "Exercise Mat with Built-In Cooling: An exercise mat with a cooling gel layer to keep you comfortable during workouts.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/dR6cOqfOp3c2abu29C"},
     { name: "Adjustable Dumbbell Grips: Grips that can be attached to standard water bottles to turn them into adjustable dumbbells.",
       link: "https://www.google.com/"},
     { name: "Foldable Yoga Block: A collapsible yoga block for convenient storage and transport.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/aEU5lYcCd9Aq97q7tY"},
     { name: "Resistance Band Door Anchor: An anchor that attaches resistance bands to doors for versatile home workouts.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/bIY15I59LbIyfvO4hN"},
     { name: "Non-Slip Workout Gloves: Gloves with silicone grips for a secure hold during weightlifting and other exercises.",
-      link: "https://www.google.com/"}
+      link: "https://buy.stripe.com/5kA9Ce1Xz8wmcjCcOk"}
 ];
 
 const gardeningInventions = [
     { name: "Plant Watering Globe: A self-watering glass globe that provides a steady supply of water to potted plants.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/7sI01E6dP4g697qcOl"},
     { name: "Garden Kneeler Seat: A padded kneeler that can also be flipped to become a comfortable garden seat.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/7sIeWy8lX3c2erKcOm"},
     { name: "Collapsible Garden Bucket: A foldable bucket for collecting garden waste or carrying tools.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/eVa6q245HfYOgzSbKj"},
     { name: "Seedling Starter Trays: Biodegradable seedling trays that can be planted directly into the ground.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/3cs4hUfOp3c2gzScOo"},
     { name: "Plant Marker Stakes: Stakes with erasable labels for easy plant identification in the garden.",
-      link: "https://www.google.com/"},
+      link: "https://buy.stripe.com/5kA8yaby93c283m5lX"},
     { name: "Garden Tool Organizer Apron: An apron with multiple pockets for carrying small gardening tools and accessories.",
-      link: "https://www.google.com/"}
+      link: "https://buy.stripe.com/7sI01EeKlh2SerK4hU"}
 ];
 
 function createButtonsWithListener(stringsArray) {
