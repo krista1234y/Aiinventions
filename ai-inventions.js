@@ -12,8 +12,7 @@ const kitchenInventions = [
 
     { name: "Magnetic Utensil Holder for Stove: A magnetic strip that attaches to the stove or range hood, providing a convenient spot to hang cooking utensils.",
 
-    link: "<script src="https://sdk.minepi.com/pi-sdk.js"></script>
-<script>Pi.init({ version: "2.0" })</script>"},
+    link: "https://sdk.minepi.com/pi-sdk.js"},
 
     { name: "Compact Handheld Vegetable Spiralizer: A small, easy-to-use tool for creating spiralized vegetables, promoting healthy eating habits.",
 
